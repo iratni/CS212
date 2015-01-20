@@ -25,6 +25,20 @@ func generateArray() -> [Int?] {
 
 let array1 = generateArray()
 
+var countNil = 0
+
+for value in array1 [0..<array1.count]{
+
+    if value == nil {
+
+        countNil++
+
+    }
+
+}
+
+println(" Total nil is \(countNil)")
+
 // Question 2: Mean
 //
 // Write code that calcuates the mean value of the non nil elements in array1.
@@ -32,6 +46,19 @@ let array1 = generateArray()
 // directly under the declaration of array2
 
 let array2 = generateArray()
+var mean = 0
+
+for value in array2 [0..<array2.count]{
+
+    if value != nil {
+
+        mean++
+
+    }
+
+}
+
+println(" Total mean is \(mean)")
 
 // Question 3: New Array
 //
@@ -39,7 +66,20 @@ let array2 = generateArray()
 // as array3, except without the nil values. The elements in nilFree should be
 // Ints, not Int optionals
 
+import UIKit
+
 let array3 = generateArray()
+
+let nilFree = [Int]()
+
+for value in array3 [0..<array3.count]{
+    
+    if value != nil {
+        nilfree = array3
+}
+}
+
+
 
 // Question 4: Sort array
 //
